@@ -1,0 +1,26 @@
+.product-card{
+    width: 244px;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 20px;
+    float: left;
+    text-align: center;
+    transition: all ease .3s;   
+    cursor: pointer;
+}
+.product-card:hover{
+    box-shadow: 0 0 6px 0 rgba(0,115,230,0.2);
+}
+.title{
+    font-size: 15px;
+    color: gray;
+    margin: 10px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+.price{
+    font-size: 22px;
+    color: gray;
+    font-weight: 600;
+}
+
