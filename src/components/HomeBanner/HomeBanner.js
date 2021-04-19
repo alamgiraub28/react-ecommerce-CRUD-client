@@ -5,7 +5,7 @@ import './HomeBanner.css';
 const HomeBanner = () => {
     return (
         <>
-            <Container fluid={true} className="text-center p-5 bg-primary">
+            <Container fluid={true} className="text-center p-5">
                 <div class="search-area mb-3">
                     <i className="material-icons search-icon">search</i>
                     <input id="type" className="search-field" type="text" placeholder="Search..." />

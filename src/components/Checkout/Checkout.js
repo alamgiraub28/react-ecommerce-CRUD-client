@@ -8,7 +8,7 @@ const Checkout = () => {
     const [productInfo, setProductInfo] = useState({});
     const { id } = useParams();
 
-    const { productName, productPrice } = productInfo;
+    const { title, price } = productInfo;
 
     useEffect(() => {
         fetch(`https://radiant-retreat-65757.herokuapp.com/product/${id}`)
@@ -19,7 +19,7 @@ const Checkout = () => {
 
     const handleCheckout = data =>{
         
-        const orderDetailsInfo = {...loggedInUser, products: data, OrderTime: new Date()}
+        const orderDetailsInfo = {...loggedInUser, products: data, Date: new Date()}
         fetch('https://radiant-retreat-65757.herokuapp.com/chekoutOrder', {
             method: 'POST',
             headers: {
@@ -51,14 +51,14 @@ const Checkout = () => {
                         </thead>
                         <tbody>
                             <tr>
-                                <td>{productName}</td>
+                                <td>{title}</td>
                                 <td>1</td>
-                                <td>${productPrice}</td>
+                                <td>${price}</td>
                             </tr>
 
                             <tr>
                                 <td colSpan="2">Total</td>
-                                <td>${productPrice}</td>
+                                <td>${price}</td>
                             </tr>
                         </tbody>
                     </Table>

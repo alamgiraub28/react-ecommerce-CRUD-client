@@ -48,8 +48,8 @@ const ManageProduct = () => {
                             <tbody>
                                 {manageProduct.map(product =>
                                     <tr>
-                                        <td>{product.productName}</td>
-                                        <td>${product.productPrice}</td>
+                                        <td>{product.title}</td>
+                                        <td>${product.price}</td>
                                         <td>
                                             <Button variant="primary btn-sm"><FontAwesomeIcon className="" icon={faEdit} /></Button>
                                             <Button onClick={() => deleteItem(product._id)} variant="danger btn-sm" className="ml-2"><FontAwesomeIcon className="" icon={faTrash} /></Button>

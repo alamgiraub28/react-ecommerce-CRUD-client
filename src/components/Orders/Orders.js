@@ -30,10 +30,10 @@ const Orders = () => {
           <tbody>
             {orders.map(pd =>
               <tr>
-                <td>{pd.productName}</td>
-                <td>${pd.productPrice}</td>
-                <td>{pd.date}</td>
-                <td>{pd.userName}</td>
+                <td>{pd.products.title}</td>
+                <td>${pd.products.price}</td>
+                <td>{pd.Date}</td>
+                <td>{pd.name}</td>
                 <td>{pd.email}</td>
               </tr>
             )}

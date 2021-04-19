@@ -1,12 +1,12 @@
 a{
     text-decoration: none !important;
 }
-.navbar-light .navbar-brand {
-    color: #000800;
-    font-weight: 700;
+
+.header-bg-custom{
+    background: rgb(235, 235, 235) !important;
 }
-.navbar-light .navbar-nav .nav-link {
-    color: #000800;
-    margin-right: 16px;
-    font-weight: 400;
+
+
+.customlogo{
+    width: 80px;
 }
